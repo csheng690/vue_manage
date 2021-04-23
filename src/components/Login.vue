@@ -85,7 +85,7 @@ export default {
 <style Lang="less" scoped>
 .login_container {
   height: 100%;
-  background-color: aquamarine;
+  background-color: #92f6f2;
 }
 .login_box {
   width: 450px;
@@ -96,6 +96,7 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 10px 10px #999;
 }
 .avatar_box {
   width: 130px;
