@@ -1,9 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '../components/Login.vue'
-import Home from '../components/Home.vue'
-import Welcome from '../components/Welcome.vue'
-import Users from '../components/user/Users.vue'
+
+// 路由懒加载
+// import Login from '../components/Login.vue'
+const Login = () =>
+    import ( /* webpackChunkName: "login_home_welcome" */ '../components/Login.vue')
+    // import Home from '../components/Home.vue'
+const Home = () =>
+    import ( /* webpackChunkName: "login_home_welcome" */ '../components/Home.vue')
+    // import Welcome from '../components/Welcome.vue'
+const Welcome = () =>
+    import ( /* webpackChunkName: "login_home_welcome" */ '../components/Welcome.vue')
+
+
+// import Users from '../components/user/Users.vue'
+const Users = () =>
+    import ( /* webpackChunkName: "Users_Rights_Roles" */ '../components/user/Users.vue')
+
 
 Vue.use(VueRouter)
 
