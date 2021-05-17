@@ -76,6 +76,7 @@ export default {
       activePath: "",
     };
   },
+  // 页面创建钩子函数中添加事件监听
   created() {
     this.getMenuList();
     this.activePath = window.sessionStorage.getItem("activePath");
@@ -118,6 +119,7 @@ export default {
   color: #fff;
   font-size: 20px;
   z-index: 10;
+  
 }
 .el-header div {
   display: flex;
