@@ -37,11 +37,11 @@ const Add = () =>
     import ( /* webpackChunkName: "GoodsList_Add" */ '../components/goods/Add.vue')
 
 
-// const Order = () =>
-//     import ( /* webpackChunkName: "Order_Report" */ '../components/order/Order.vue')
+const Order = () =>
+    import ( /* webpackChunkName: "Order_Report" */ '../components/order/Order.vue')
 
-// const Report = () =>
-//     import ( /* webpackChunkName: "Order_Report" */ '../components/report/Report.vue')
+const Report = () =>
+    import ( /* webpackChunkName: "Order_Report" */ '../components/report/Report.vue')
 
 
 
@@ -64,8 +64,8 @@ const routes = [
             { path: '/params', component: Params },
             { path: '/goods', component: GoodsList },
             { path: '/goods/add', component: Add },
-            // { path: '/orders', component: Order },
-            // { path: '/reports', component: Report }
+            { path: '/orders', component: Order },
+            { path: '/reports', component: Report }
         ]
     }
 ]
